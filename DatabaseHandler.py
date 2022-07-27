@@ -45,7 +45,8 @@ class DatabaseHandler:
             db.Column('year',                   db.Integer()),
             db.Column('status',                 db.String(30)),
             db.Column('isLicensed',             db.Boolean()),
-            db.Column('isCompletelyTranslated', db.Boolean())
+            db.Column('isCompletelyTranslated', db.Boolean()),
+            db.Column('url',                    db.String(100))
         )
 
         Novel_Stats = db.Table( 'NovelStats',metadata,
